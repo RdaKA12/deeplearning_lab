@@ -1,0 +1,212 @@
+{
+  "data_summary": {
+    "shape": {
+      "rows": 1372,
+      "columns": 5
+    },
+    "columns": [
+      "variance",
+      "skewness",
+      "curtosis",
+      "entropy",
+      "class"
+    ],
+    "missing_values": {
+      "variance": 0,
+      "skewness": 0,
+      "curtosis": 0,
+      "entropy": 0,
+      "class": 0
+    },
+    "class_distribution": {
+      "0": 762,
+      "1": 610
+    },
+    "describe": {
+      "variance": {
+        "count": 1372.0,
+        "mean": 0.4337,
+        "std": 2.8428,
+        "min": -7.0421,
+        "25%": -1.773,
+        "50%": 0.4962,
+        "75%": 2.8215,
+        "max": 6.8248
+      },
+      "skewness": {
+        "count": 1372.0,
+        "mean": 1.9224,
+        "std": 5.869,
+        "min": -13.7731,
+        "25%": -1.7082,
+        "50%": 2.3197,
+        "75%": 6.8146,
+        "max": 12.9516
+      },
+      "curtosis": {
+        "count": 1372.0,
+        "mean": 1.3976,
+        "std": 4.31,
+        "min": -5.2861,
+        "25%": -1.575,
+        "50%": 0.6166,
+        "75%": 3.1792,
+        "max": 17.9274
+      },
+      "entropy": {
+        "count": 1372.0,
+        "mean": -1.1917,
+        "std": 2.101,
+        "min": -8.5482,
+        "25%": -2.4134,
+        "50%": -0.5866,
+        "75%": 0.3948,
+        "max": 2.4495
+      }
+    },
+    "correlation_to_target": {
+      "variance": -0.7248,
+      "skewness": -0.4447,
+      "curtosis": 0.1559,
+      "entropy": -0.0234
+    },
+    "strongest_feature": "variance",
+    "strongest_feature_comment": "variance ozelligi hedef ile en guclu dogrusal iliskiyi gosteriyor (-0.7248)."
+  },
+  "scratch_best_result": {
+    "experiment_name": "Scratch + Standardization",
+    "model_family": "scratch",
+    "preprocessing": "standardized",
+    "architecture": "4-6-1",
+    "l2_lambda": 0.0,
+    "parameter_count": 37,
+    "epochs_trained": 600,
+    "best_epoch": 598,
+    "val_metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "loss": 0.027423257656263304
+    },
+    "test_metrics": {
+      "accuracy": 0.9709090909090909,
+      "precision": 0.9384615384615385,
+      "recall": 1.0,
+      "f1": 0.9682539682539683,
+      "loss": 0.05071583878171362
+    },
+    "test_bundle": {
+      "accuracy": 0.9709090909090909,
+      "precision": 0.9384615384615385,
+      "recall": 1.0,
+      "f1": 0.9682539682539683,
+      "confusion_matrix": [
+        [
+          145,
+          8
+        ],
+        [
+          0,
+          122
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9477124183006536,
+          "f1-score": 0.9731543624161074,
+          "support": 153.0
+        },
+        "1": {
+          "precision": 0.9384615384615385,
+          "recall": 1.0,
+          "f1-score": 0.9682539682539683,
+          "support": 122.0
+        },
+        "accuracy": 0.9709090909090909,
+        "macro avg": {
+          "precision": 0.9692307692307692,
+          "recall": 0.9738562091503268,
+          "f1-score": 0.9707041653350379,
+          "support": 275.0
+        },
+        "weighted avg": {
+          "precision": 0.9726993006993007,
+          "recall": 0.9709090909090909,
+          "f1-score": 0.9709803693696313,
+          "support": 275.0
+        }
+      }
+    }
+  },
+  "pytorch_result": {
+    "experiment_name": "PyTorch Replica",
+    "model_family": "pytorch",
+    "preprocessing": "standardized",
+    "architecture": "4-6-1",
+    "l2_lambda": 0.0,
+    "parameter_count": 37,
+    "epochs_trained": 600,
+    "best_epoch": 598,
+    "val_metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "loss": 0.027423257656263304
+    },
+    "test_metrics": {
+      "accuracy": 0.9709090909090909,
+      "precision": 0.9384615384615385,
+      "recall": 1.0,
+      "f1": 0.9682539682539683,
+      "loss": 0.05071583878171363
+    },
+    "test_bundle": {
+      "accuracy": 0.9709090909090909,
+      "precision": 0.9384615384615385,
+      "recall": 1.0,
+      "f1": 0.9682539682539683,
+      "confusion_matrix": [
+        [
+          145,
+          8
+        ],
+        [
+          0,
+          122
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9477124183006536,
+          "f1-score": 0.9731543624161074,
+          "support": 153.0
+        },
+        "1": {
+          "precision": 0.9384615384615385,
+          "recall": 1.0,
+          "f1-score": 0.9682539682539683,
+          "support": 122.0
+        },
+        "accuracy": 0.9709090909090909,
+        "macro avg": {
+          "precision": 0.9692307692307692,
+          "recall": 0.9738562091503268,
+          "f1-score": 0.9707041653350379,
+          "support": 275.0
+        },
+        "weighted avg": {
+          "precision": 0.9726993006993007,
+          "recall": 0.9709090909090909,
+          "f1-score": 0.9709803693696313,
+          "support": 275.0
+        }
+      }
+    }
+  },
+  "initial_forward_gap": 0.0,
+  "discussion": "Ham ve standardize veri ayni validation accuracy seviyesine ulasti; burada temel fark yakinlasma hizi ve loss davranisi oldu. Gizli katmandaki noron sayisini artirmak kapasiteyi yukseltip hatayi azaltabildi; bu, temel modelde hafif bias olabilecegini gosteriyor. Ek gizli katman anlamli kazanc saglamadi; bu veri icin derinlik artisinin getirisi sinirli kaldi. L2 regularization belirgin bir genel performans artisina donusmedi; veri seti zaten kucuk ve guclu ayrisabilir oldugu icin duzenleme etkisi sinirli kaldi. Train ve validation egri farki buyurse overfitting, her ikisi de dusuk kalsaydi underfitting yorumu yapilacakti. Bu projede en iyi modelde train ve validation performansi birbirine yakin seyrederek dengeli bir ogrenme gosterdi."
+}

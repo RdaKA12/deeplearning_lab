@@ -1,0 +1,74 @@
+{
+  "shape": {
+    "rows": 1372,
+    "columns": 5
+  },
+  "columns": [
+    "variance",
+    "skewness",
+    "curtosis",
+    "entropy",
+    "class"
+  ],
+  "missing_values": {
+    "variance": 0,
+    "skewness": 0,
+    "curtosis": 0,
+    "entropy": 0,
+    "class": 0
+  },
+  "class_distribution": {
+    "0": 762,
+    "1": 610
+  },
+  "describe": {
+    "variance": {
+      "count": 1372.0,
+      "mean": 0.4337,
+      "std": 2.8428,
+      "min": -7.0421,
+      "25%": -1.773,
+      "50%": 0.4962,
+      "75%": 2.8215,
+      "max": 6.8248
+    },
+    "skewness": {
+      "count": 1372.0,
+      "mean": 1.9224,
+      "std": 5.869,
+      "min": -13.7731,
+      "25%": -1.7082,
+      "50%": 2.3197,
+      "75%": 6.8146,
+      "max": 12.9516
+    },
+    "curtosis": {
+      "count": 1372.0,
+      "mean": 1.3976,
+      "std": 4.31,
+      "min": -5.2861,
+      "25%": -1.575,
+      "50%": 0.6166,
+      "75%": 3.1792,
+      "max": 17.9274
+    },
+    "entropy": {
+      "count": 1372.0,
+      "mean": -1.1917,
+      "std": 2.101,
+      "min": -8.5482,
+      "25%": -2.4134,
+      "50%": -0.5866,
+      "75%": 0.3948,
+      "max": 2.4495
+    }
+  },
+  "correlation_to_target": {
+    "variance": -0.7248,
+    "skewness": -0.4447,
+    "curtosis": 0.1559,
+    "entropy": -0.0234
+  },
+  "strongest_feature": "variance",
+  "strongest_feature_comment": "variance ozelligi hedef ile en guclu dogrusal iliskiyi gosteriyor (-0.7248)."
+}

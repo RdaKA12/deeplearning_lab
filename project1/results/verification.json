@@ -1,0 +1,34 @@
+{
+  "train_shape": [
+    877,
+    4
+  ],
+  "val_shape": [
+    220,
+    4
+  ],
+  "test_shape": [
+    275,
+    4
+  ],
+  "train_labels_shape": [
+    877,
+    1
+  ],
+  "val_labels_shape": [
+    220,
+    1
+  ],
+  "test_labels_shape": [
+    275,
+    1
+  ],
+  "feature_count_ok": true,
+  "sample_count_ok": true,
+  "scratch_probability_range_ok": true,
+  "torch_probability_range_ok": true,
+  "scratch_binary_predictions_ok": true,
+  "initial_forward_match_ok": true,
+  "scratch_loss_decreases": true,
+  "torch_loss_decreases": true
+}
