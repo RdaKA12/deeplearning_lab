@@ -37,7 +37,7 @@ where.exe nvcc
 [Environment]::GetEnvironmentVariable('CUDA_PATH', 'Machine')
 ```
 
-Onemli: Toolkit kurulumu `PATH` degiskenini gunceller. Bu nedenle mevcut acik terminal oturumlari ve mevcut Codex oturumu eski `PATH` ile devam edebilir; `nvcc` komutunu yalnizca yeni acilan bir terminalde dogrulayin.
+Onemli: Toolkit kurulumu `PATH` degiskenini gunceller. Bu nedenle mevcut acik terminal oturumlari eski `PATH` ile devam edebilir; `nvcc` komutunu yalnizca yeni acilan bir terminalde dogrulayin.
 
 Bu makinede beklenen `nvcc` yolu:
 
