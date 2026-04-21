@@ -1,0 +1,70 @@
+{
+  "runtime_checks": {
+    "cuda_available": true,
+    "device": "cuda",
+    "use_amp_matches_device": true
+  },
+  "split_checks": {
+    "train_size_ok": true,
+    "val_size_ok": true,
+    "test_size_ok": true
+  },
+  "shape_checks": {
+    "sample_shape_ok": true,
+    "cnn_output_shapes": {
+      "lenet_baseline": [
+        128,
+        10
+      ],
+      "lenet_bn_dropout": [
+        128,
+        10
+      ],
+      "resnet18_cifar": [
+        128,
+        10
+      ]
+    },
+    "cnn_output_shape_ok": true,
+    "feature_shapes": {
+      "train_features": [
+        45000,
+        512
+      ],
+      "val_features": [
+        5000,
+        512
+      ],
+      "test_features": [
+        10000,
+        512
+      ],
+      "train_labels": [
+        45000
+      ],
+      "val_labels": [
+        5000
+      ],
+      "test_labels": [
+        10000
+      ]
+    },
+    "feature_dimension_ok": true,
+    "feature_label_alignment_ok": true
+  },
+  "training_checks": {
+    "history_files_exist": true,
+    "plot_files_exist": true,
+    "loss_decreases": {
+      "lenet_baseline": true,
+      "lenet_bn_dropout": true,
+      "resnet18_cifar": true
+    },
+    "predictions_not_collapsed": {
+      "lenet_baseline": true,
+      "lenet_bn_dropout": true,
+      "resnet18_cifar": true
+    },
+    "summary_contains_all_experiments": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "project_root": "D:\\Ankara Üniversitesi\\Ankara Üni 2025-2026\\Bahar\\Derin Öğrenme\\deeplearning_lab\\project2",
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "cuda_available": true,
+  "torch_version": "2.11.0+cu128",
+  "torch_cuda_version": "12.8",
+  "use_amp": true,
+  "num_workers": 2,
+  "pin_memory": true,
+  "cudnn_enabled": true
+}

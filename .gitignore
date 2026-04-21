@@ -18,3 +18,7 @@ Thumbs.db
 
 # Local experiment noise
 *.log
+
+# Project2 generated data and heavy artifacts
+project2/data/
+project2/results/checkpoints/*.pt
